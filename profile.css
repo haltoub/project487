@@ -1,0 +1,73 @@
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    padding:-10px;
+    display: inline-block;
+
+
+
+}
+
+.title {
+    color: red;
+    font-size: 8px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: red;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+a[href] {
+    text-decoration: none;
+    font-size: 14px;
+    color: red;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+img{
+  height:250px;
+  top:0;
+      bottom:0;
+      margin:auto;
+      position: relative;
+
+
+}
+h2{
+  color: white;
+}
+p{
+  color:black;
+  font-size: 14px;
+}
+h1{
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  font-style: italic;
+}
+a[class=navbar-brand]{
+  color:white;
+  font-style: italic;
+  text-decoration-style: dashed;;
+}

@@ -1,0 +1,42 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+h1{
+   color:black;
+   text-decoration-style: solid;
+   text-decoration: underline;
+   font-style: italic;
+
+}
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+
+}
+
+
+footer {
+
+  padding: 25px;
+}
+video{
+  display: block;
+  height: 50%;
+  left: 25%;
+  top: 25%;
+
+}
+h2{
+  text-align: left;
+  color:white;
+  font-size: 25px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+a[href]{
+  color: white;
+}

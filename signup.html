@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["LName"].value;
+	 var x = document.forms["myForm"]["FName"].value;
+	  var x = document.forms["myForm"]["Email"].value;
+	   var x = document.forms["myForm"]["Phone"].value;
+	    var x = document.forms["myForm"]["BirthDay"].value;
+    if (x == "") {
+        alert("All fields must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<style>
+
+
+
+body {
+   background-image: url("https://turing.cs.olemiss.edu/~haltoub/myProject/seniorProject/images/s.jpg");
+   background-color: #cccccc;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+input[type=submit] {
+    width: 10%;
+    background-color: #6f93ce;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+ input[type=text]{
+  width:50%;
+  padding: 10px 5px;
+  margin: 7px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+font color: black;
+}
+input[type=password]{
+ width:50%;
+ padding: 10px 5px;
+ margin: 7px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+font color: black;
+}
+
+a[href]{
+  color:red;
+  font size:10px;
+}
+</style>
+
+
+<body>
+
+<form name="myForm" action="savesignup.php"
+onsubmit="return validateForm()" method="post">
+
+<p><font color="black"><font size ="15"><p>Please enter the following information:</font></p>
+
+  Username:<br>
+  <input type="text" id ="username" name="username" placeholder="Enter your username Please">
+  <br><br>
+  Password:<br>
+  <input type="password" id ="password" name="password" placeholder="Enter your password Please">
+  <br><br>
+  Last name:<br>
+  <input type="text" id ="LName" name="LName" placeholder="Enter your Last Name Please">
+  <br><br>
+  First name:<br>
+  <input type="text" id ="FName"  name="FName"placeholder="Enter your First Name Please" >
+  <br><br>
+   Email:<br>
+  <input type="text" id="Email"  name="Email"placeholder="Enter your Email Please" >
+   <br><br>
+  Phone:<br>
+  <input type="text" id="Phone"  name="Phone"placeholder="Enter your Phone number Please" >
+  <br><br>
+   BirthDay:<br>
+  <input type="date"  id ="BirthDay" name="BirthDay" placeholder="Enter your birthday mm/dd/yyyy">
+  <br><br>
+  <br><br>
+  <input type="submit" id="submit" value="Submit" <
+<p>
+  <br>Already a member? <a href="login.html">Sign in</br></a>
+</p>
+
+
+<script>
+   document.getElementById("submit").addEventListener("click", myFunction);
+
+   function myFunction() {
+    alert("Thank you for your registration");
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
